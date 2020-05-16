@@ -1,0 +1,85 @@
+/* general styles */
+
+* {
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+body {
+    display:block;
+    background-image:url("https://samanthashin.github.io/images/dogwood_horizontal.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0;
+    width: 100%;
+    
+    }
+  
+
+    h1 {
+        font-size: 1.5rem;
+        font-family:'josefin sans';
+        font-weight:700;
+    
+        }
+    
+/* general styles */
+
+
+    /* hero styles */
+
+  
+    
+      /* you can start to use your color palettes here for transparent background in rgba*/
+      .inner-hero {
+        padding: 2rem;
+        border-radius: 0.5rem;
+      }
+      
+      .inner-hero > h1 {
+        color: white;
+        font-size: 4em;
+        letter-spacing: 2px;
+
+      }
+      /* you can start to use your color palettes here or pick a color from the background using the eyedropper tool in Firefox */
+      .subhead {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 200;
+        font-family:'josefin sans';
+
+      }
+      
+      .button{
+        margin:2em 0em;
+        padding:0.8em;
+        background-color:white;
+        border:none;
+        font-size: 1rem;
+        border-radius: 2em;
+    
+      
+    
+      }
+
+      .button a{
+
+        color:black;
+        text-decoration:none;
+        font-weight: 400;
+        font-family:'josefin sans';
+        
+      }
+      
+    /* hero styles */

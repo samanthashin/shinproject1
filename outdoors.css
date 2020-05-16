@@ -1,0 +1,260 @@
+/* general styles */
+
+* {
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background: white;
+    margin:0;
+    font-family:'raleway';
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    font-size:0.8em;
+    }
+    
+img {
+    display: block;
+    width: 100%;
+    }
+
+h1 {
+    font-size: 1.5rem;
+    font-family:'josefin sans';
+    font-weight:700;
+    font-color:#1c1c1c'
+
+    }
+
+/* general styles */
+
+/* footer */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#DDC723;
+    color: #1C1C1C;
+    text-align: center;
+    font-family:'josefin sans';
+  }
+
+/* footer */
+
+
+/* nav styles */
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:#9BC184;
+      }
+       
+      .logo a {
+        color: #1c1c1c;
+      }
+      .logo {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: 'josefin sans';
+        font-size: 2rem;
+      }
+      
+      /* get rid of bullets on list and make text uppercase */
+      
+      .main-nav {
+        list-style: none;
+        text-transform: uppercase;
+        font-family: 'josefin sans';
+        font-weight:700;
+        font-size:0.8em;
+      }
+      
+      /* get rid of underline on links */
+      .logo a,
+      .main-nav a {
+        text-decoration: none;
+        letter-spacing: 0.2rem;
+     
+      }
+      
+      .logo a:hover {
+        color: white;
+      }
+      /* make main nav flex and make it vertical */
+      .main-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .main-nav a {
+        display: block;
+        padding: 1em;
+        color:#1c1c1c;
+      }
+      .main-nav a:hover {
+        color: white;
+      }
+      
+      .main-nav a {
+        text-align: center;
+        padding: 10px;
+     
+      }
+      
+      .main-nav li:last-of-type a {
+        border-bottom: none;
+      }
+      
+      @media only screen and (min-width: 35em) {
+        body {
+          background-color:white;
+        }
+        /* change flex direction to horizontal and space things out */
+        .main-nav {
+          flex-direction: row;
+          justify-content: space-around;
+        }
+        /* remove borders on top and bottom */
+        .main-nav a {
+          border-top: none;
+          border-bottom: none;
+        }
+      }
+      
+      @media only screen and (min-width: 60em) {
+        body {
+          background-color:#white;;
+        }
+        .logo {
+          margin-left: 20px;
+          width: 80%;
+        }
+        /* put logo and main nav on same line */
+        .flex-container {
+          flex-direction: row;
+        }
+      
+        /* move the list to the right side of the browser */
+        .main-nav {
+          justify-content: flex-end;
+        }
+      
+        /* add some padding to give the main nav some breathing room */
+        .main-nav a {
+          padding: 1.5em;
+        }
+      }
+
+    /* nav styles */
+
+  
+  /* grid styles */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  article {
+    background: white;
+    padding:1em;
+    margin-bottom:2em;
+  }
+  
+  
+  article > p {
+    line-height: 1.3;
+
+  }
+  
+  .columns {
+    display: grid;
+    grid-gap: 0em;
+    margin: 0 auto;
+    padding:2em;
+    max-width: 1100px;
+
+  }
+  
+  /* media queries */
+  
+  @media (min-width: 800px) {
+    .columns {
+      background: white;
+      grid-template-columns: 1fr 1fr;
+      grid-gap:0em;
+    }
+    .image.one {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .text.one {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .image.two {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .text.two {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .image.three {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .text.three {
+      grid-column: 2;
+      grid-row: 3;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .columns {
+      background: white;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap:2em;
+    }
+    .image.one {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .text.one {
+       grid-column: 1;
+      grid-row: 2;
+    }
+    .image.two {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .text.two {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .image.three {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    .text.three {
+      grid-column: 3;
+      grid-row: 2;
+    }
+  }
+
+  /* grid styles */
+  

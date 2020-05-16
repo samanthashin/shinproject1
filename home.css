@@ -1,0 +1,238 @@
+/* general styles */
+
+* {
+  box-sizing: border-box; 
+  padding: 0;
+  margin: 0;
+}
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+body {
+  background: #F0F0F0;
+  margin:0;
+  font-family:'raleway';
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  font-size:0.8em;
+  }
+  
+img {
+  display: block;
+  width: 100%;
+  }
+
+h1 {
+  font-size: 1.5rem;
+  font-family:'josefin sans';
+  font-weight:700;
+
+  }
+
+/* general styles */
+
+/* footer */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#DDC723;
+  color: #1C1C1C;
+  text-align: center;
+  font-family:'josefin sans';
+}
+
+/* footer */
+
+
+/* nav styles */
+  .flex-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background:#9BC184;
+    }
+     
+    .logo a {
+      color: #1C1C1C;
+    }
+    .logo {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-family: 'josefin sans';
+      font-size: 2rem;
+    }
+    
+    /* get rid of bullets on list and make text uppercase */
+    
+    .main-nav {
+      list-style: none;
+      text-transform: uppercase;
+      font-family: 'josefin sans';
+      font-weight:700;
+      font-size:0.8em;
+    }
+    
+    /* get rid of underline on links */
+    .logo a,
+    .main-nav a {
+      text-decoration: none;
+      letter-spacing: 0.2rem;
+   
+    }
+    
+    .logo a:hover {
+      color: white;
+    }
+    /* make main nav flex and make it vertical */
+    .main-nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .main-nav a {
+      display: block;
+      padding: 1em;
+      color:#1C1C1C;
+    }
+    .main-nav a:hover {
+      color: white;
+    }
+    
+    .main-nav a {
+      text-align: center;
+      padding: 10px;
+      border-top: 0.1px solid white;
+    }
+    
+    .main-nav li:last-of-type a {
+      border-bottom: none;
+    }
+    
+    @media only screen and (min-width: 35em) {
+      body {
+        background-color:white;
+      }
+      /* change flex direction to horizontal and space things out */
+      .main-nav {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      /* remove borders on top and bottom */
+      .main-nav a {
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+    
+    @media only screen and (min-width: 60em) {
+      body {
+        background-color:white;
+      }
+      .logo {
+        margin-left: 20px;
+        width: 80%;
+      }
+      /* put logo and main nav on same line */
+      .flex-container {
+        flex-direction: row;
+      }
+    
+      /* move the list to the right side of the browser */
+      .main-nav {
+        justify-content: flex-end;
+      }
+    
+      /* add some padding to give the main nav some breathing room */
+      .main-nav a {
+        padding: 1.5em;
+      }
+    }
+
+  /* nav styles */
+
+
+
+  /* card styles */
+    
+    img {
+      display: block;
+      max-width: 100%; /* makes image responsive if needed but makes sure it doesn't stretch */
+    }
+    
+    /* make the Section class cards here.  */
+    
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding:3em;
+
+    }
+    
+    /* make the card flex. The default is row so change flex direction to vertical. */
+    .card {
+      background-color: #E7ECF0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      min-width: 250px;
+      max-width: 350px;
+      box-shadow: 0 2px 5px lightgray;
+
+      position: relative;
+      top: 0;
+    }
+    
+    .card:hover {
+      transition: all 0.1s ease-in;
+      top: -2px;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+    .card:hover {
+    }
+    
+    .cardphoto {
+      max-height: 250px;
+      overflow: hidden;
+      padding:1rem;
+    }
+    
+    .cardarticle {
+      padding: 1rem;
+      flex: 1;
+    }
+    
+    /* typography */
+    .cardH1 {
+      font-size: 2rem;
+      margin: 0;
+      color: gray;
+    }
+    
+    .card p {
+      font-family:'raleway';
+      font-weight: 300;
+      letter-spacing: 0.05rem;
+      font-size:1em;
+      line-height:1.2em;
+    }
+    
+    .card footer {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #999;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    
+  /* card styles */
